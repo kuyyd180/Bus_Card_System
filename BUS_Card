@@ -1,0 +1,39 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class BUS_Card {
+
+	public static void main(String[] args) {
+		
+		// 현재 가지고 있는 돈 
+				int MyMoney = 5000;
+				
+				//버스 탑승
+				Scanner scanner = new Scanner(System.in);
+				System.out.println("버스에 탑승 하시겠습니까? Yse: 1/ No: 2");
+				System.out.print(">>>");
+				double input = scanner.nextDouble();
+				
+				// 탑승 or NO 탑승
+				if (input == 1) {
+					System.out.println("안녕하세요? 교통카드를 스캔해주세요");
+				} else {
+					System.out.println("다음에 뵙겠습니다.");
+				}
+				
+				// 현재잔액, 버스요금 비교
+				Scanner scanner1 = new Scanner(System.in);
+				System.out.println("잔액은 얼마 있나요?");
+				System.out.print(">>>");
+				double bank = scanner1.nextDouble();
+				
+				if (bank >= 1500) {
+					System.out.println("삑! 감사합니다 탑승해주세요");
+				} else {
+					System.out.println("잔액이 부족합니다");
+				}
+				
+			}
+
+		}
